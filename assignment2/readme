@@ -1,0 +1,11 @@
+Q.1 -> script1.sh
+
+	USAGE : ./script1.sh input.csv
+
+Q.2 -> script2.sh
+
+	USAGE : ./script2.sh input.csv
+
+Q.3 -> script3.sh
+
+	USAGE : ./script3.sh input.csv
