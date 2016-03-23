@@ -1,0 +1,12 @@
+Q.1 -> script1.sh
+
+USAGE : ./script1.sh jayant agrawal
+
+Q.2 -> script2.sh
+
+USAGE : ./script2.sh file1.csv file2.csv
+
+Q.3 -> avg.sh
+
+USAGE ./avg.sh input
+(input contains integars in different lines and outputs average)
