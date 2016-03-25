@@ -1,0 +1,15 @@
+\contentsline {section}{List of Figures}{ii}
+\contentsline {section}{List of Tables}{ii}
+\contentsline {section}{\numberline {1}Player Information}{1}
+\contentsline {section}{\numberline {2}Introduction}{1}
+\contentsline {section}{\numberline {3}Captaincy}{1}
+\contentsline {section}{\numberline {4}Playing Style}{1}
+\contentsline {section}{\numberline {5}Batting Career Summary}{2}
+\contentsline {section}{\numberline {6}Career breakdown}{2}
+\contentsline {section}{\numberline {7}Achievements and Awards}{3}
+\contentsline {subsection}{\numberline {7.1}National Honours \cite {wiki}}{3}
+\contentsline {subsection}{\numberline {7.2}Other Honours \cite {wiki}}{3}
+\contentsline {section}{\numberline {8}Philanthropy}{3}
+\contentsline {section}{\numberline {9}Conclusion}{3}
+\contentsline {section}{References}{3}
+\contentsline {section}{Index}{5}

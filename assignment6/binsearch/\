@@ -1,0 +1,110 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+
+\geometry{
+a4paper,
+top=10mm,
+bottom=15mm,
+left=10mm,
+right=10mm,	
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+\newgeometry{
+top=30mm,
+bottom=50mm,
+left=20mm,
+right=20mm,
+}
+
+\begin{center}
+
+\textbf{\Huge Binary Search} \\
+\vspace{50pt}
+{\large An Article for Assignment 6 on \LaTeX } \\
+\textbf{\large CS251: Computer Laboratory} \\
+\vspace{100pt}
+
+\textbf{\large Jayant Agrawal} \\
+(14282)
+\vspace{30pt}
+
+INSTRUCTOR \\
+\textbf{Prof. Arnab Bhattacharya}
+\vspace{100pt}
+
+\includegraphics[width=0.3\columnwidth]{logo.jpg}\\
+\textbf{\large Department of Comuter Science and Engineering \\
+INDIAN INSTITUTE OF TECHNOLOGY KANPUR \\
+KANPUR 208016, INDIA \\ } 
+\vspace{20pt}
+Feb 2016
+
+
+\end{center}
+
+\restoregeometry
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\addcontentsline{toc}{section}{\listfigurename}
+\addcontentsline{toc}{section}{\listtablename}
+\listoffigures
+\listoftables
+
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Abstract}
+Searching and Sorting are the two most basic routines that are involved in almost every software. As the name suggests, searching involves finding a key in a given list. The trivial solution is to iterate over all the elements of the list and report whether the key is found or not. The time complexity involved in this operation is of the order of the size of the list. In this article, we see how to solve this problem in a much more efficient way. The solution is known as \textbf{Binary Search} and the time complexity involved is of the order of $log(n)$ , if the given input is arranged nicely, where 'n' is the size of the given list or set.
+
+
+\section{Algorithm}
+Though, this approach has a wide variety of applications, it is most commonly used to find a given value within a sorted sequence.
+
+
+\subsection{Pseudo-Code}
+Consider the simple problem of finding a key within an array 'A'. The following pseudo-code returns the index of the key, if it is found.
+
+
+\begin{algorithm}
+\caption{Binary Search Algorithm}
+\label{binalgo}
+\begin{algorithmic}[1]
+\Procedure{BinSearch}{}
+\State $left \gets 0 $
+\State $right \gets n-1 $
+\While{ $right \leq left$ }
+\State $mid \gets (left+right)/2 $
+\If{ $A[mid] == key $ }
+\State return mid
+\ElsIf {$A[mid] < key $}
+\State $left \gets mid + 1 $
+\Else
+\State $right \gets mid - 1$
+\EndIf
+\EndWhile
+\State return NotFound
+\EndProcedure
+\end{algorithmic}
+\end{algorithm}
+
+\subsection{Complexity}
+
+\section{Advantages}
+\section{Disadvantages}
+
+\bibliographystyle{alpha}
+%\bibliographystyle{abbrv}
+\bibliography{cse}
+
+
+\end{document}

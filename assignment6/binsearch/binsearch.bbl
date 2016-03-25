@@ -1,0 +1,21 @@
+\begin{thebibliography}{Kum15}
+
+\bibitem[CB]{khan}
+Thomas Cormen and David Balkcom.
+\newblock Binary search.
+\newblock [Accessed; 27 Feb 2016].
+
+\bibitem[Kum15]{uni}
+Parmar Kumbharana.
+\newblock Comparing linear search and binary search algorithms to search an
+  element from a linear list implemented through static array, dynamic array
+  and linked list.
+\newblock {\em International Journal of Computer Applications}, 121(3):13--17,
+  2015.
+
+\bibitem[Wik]{wiki}
+Wikipedia.
+\newblock Binary search algorithm.
+\newblock [Accessed; 27 Feb 2016].
+
+\end{thebibliography}
