@@ -1,0 +1,14 @@
+\contentsline {section}{List of Figures}{i}
+\contentsline {section}{List of Tables}{i}
+\contentsline {section}{\numberline {1}Abstract}{1}
+\contentsline {section}{\numberline {2}Algorithm}{1}
+\contentsline {subsection}{\numberline {2.1}Pseudo-Code}{1}
+\contentsline {subsection}{\numberline {2.2}Complexity}{2}
+\contentsline {section}{\numberline {3}Pre-Processing Time}{2}
+\contentsline {section}{\numberline {4}Comparison with linear search}{2}
+\contentsline {subsection}{\numberline {4.1}No of Queries- Large}{3}
+\contentsline {subsection}{\numberline {4.2}No of Queries- Low}{4}
+\contentsline {subsection}{\numberline {4.3}Summary}{4}
+\contentsline {section}{\numberline {5}Conclusion}{4}
+\contentsline {section}{References}{4}
+\contentsline {section}{Index}{5}

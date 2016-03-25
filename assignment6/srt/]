@@ -1,0 +1,106 @@
+\documentclass{article}
+\usepackage{geometry}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{makeidx}
+
+\makeindex
+\geometry{
+a4paper,
+top=10mm,
+bottom=15mm,
+left=10mm,
+right=10mm,
+}
+
+\begin{document}
+
+\pagenumbering{gobble}
+
+\newgeometry{
+top=30mm,
+bottom=50mm,
+left=20mm,
+right=20mm,
+}
+
+\begin{center}
+\includegraphics[width=0.3\columnwidth]{Sachin.jpg}\\
+\vspace{10pt}
+\textbf{\Huge Sachin Tendulkar} \\
+\vspace{20pt}
+{\large An Article for Assignment 6 on \LaTeX } \\
+\textbf{\large CS251: Computer Laboratory} \\
+\vspace{30pt}
+
+\textbf{\large Jayant Agrawal} \\
+(14282)
+\vspace{20pt}
+
+INSTRUCTOR \\
+\textbf{Prof. Arnab Bhattacharya}
+\vspace{30pt}
+
+\includegraphics[width=0.3\columnwidth]{logo.jpg}\\
+\textbf{\large Department of Comuter Science and Engineering \\
+INDIAN INSTITUTE OF TECHNOLOGY KANPUR \\
+KANPUR 208016, INDIA \\ }
+\vspace{10pt}
+Feb 2016
+
+\end{center}
+\newpage
+
+\begin{center}
+
+\textbf{\Large Sir Donald Bradman\\}
+"I see myself when I see Sachin Batting"
+\vspace{80pt}
+
+\textbf{\Large Brian Lara}\\
+"Tendulkar is to Cricket what Michael Jordan is to Basketball and Muhammad Ali is to Boxing"
+\vspace{80pt}
+
+\textbf{\Large Hashim Amla}\\
+"Nothing bad can happen to us if we're on a plane in India with Sachin Tendulkar on it"
+\vspace{80pt}
+
+\textbf{\Large Time Magazine}\\
+"We have had champions, we have had legends, but we have never had another Sachin Tendulkar and we never will"
+\vspace{80pt}
+
+\textbf{\Large Matthew Hayden}\\
+"I have seen God. He bats for India a number 4 in Tests"
+\vspace{80pt}
+
+\textbf{\Large A fan at the SCG}\\
+"Commit all your crimes when Sachin is batting. They will go unnoticed for even the Lord is busy watching him"
+
+\cite{scoop}
+\end{center}
+
+
+\restoregeometry
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\addcontentsline{toc}{section}{\listfigurename}
+\addcontentsline{toc}{section}{\listtablename}
+\listoffigures
+\listoftables
+
+\newpage
+\pagenumbering{arabic}
+
+\section{Introduction}
+\textbf{Sachin Ramesh Tendulkar} is a former Indian cricketer and captain, widely regarded as one of the greatest batsmen of all time. He took cricket \index{cricket} at the age of eleven, made his Test \index{Test} debut \index{debut} on 15 November 1989 against Pakistan in Karachi at the age of sixteen. \cite{wiki}
+
+\addcontentsline{toc}{section}{References}
+\bibliographystyle{alpha}
+\bibliography{general}
+\newpage
+\addcontentsline{toc}{section}{Index}
+\printindex
+\end{document}
