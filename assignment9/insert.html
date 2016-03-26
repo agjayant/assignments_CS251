@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <link rel="stylesheet" href="main.css">
+                <title>HOME</title>
+        </head>
+        <body>
+		<header class="head">
+			<img src="logo.jpg" class="logo">
+        	        <div class="heading">
+                	        <h1 id="first">ENROLLMENT</h1>
+                        	<h2 id="second">Department of Computer Science and Engineering</h2>
+	                        <h3 id="third">IIT Kanpur</h3>
+        	         </div>
+		
+			 <div class="nav">
+	                        <a class="goto" href="home.html">Home</a>
+        	                <a class="goto" href="query.html">Query</a>
+                 	</div>
+		 </header>
+		 
+		 <section class="form1">		 
+                 	<form action="insert.php" method="post" class="entry">
+		 		<input type="number" name="roll" value="Roll No"><br>
+			 	<input type="text" name="course" value="Course ID"><br>
+			 	<input type="number" name="assignments" value="Marks in Assignments"><br>
+			 	<input type="number" name="quiz" value="Marks in Quizzes"><br>
+		 		<input type="number" name="mid" value="Marks in Mid-Sem"><br>
+			 	<input type="number" name="end" value="Marks in End-Sem"><br>
+        	                <input type="submit" name="insert" value="Submit Entry">
+                	 </form>
+		 </section>          
+	
+		 <footer class="table">
+                         <a class="result" href="result.php">Enrollment Table</a>
+                 </footer>
+        </body>
+</html>        
