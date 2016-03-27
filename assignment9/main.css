@@ -114,11 +114,16 @@ form{
 
 
 .form2{
-	line-height:45px;
+
 	padding-top:60px;
 	padding-bottom:240px;	
 }
-
+.entry{
+	line-height:45px;	
+}
+.res{
+	line-height:27px;	
+}
 .btn{
 	border:0;
 	color:#fff;
@@ -144,4 +149,8 @@ input{
 
 #ch{
 	color:#888;
+}
+
+#new{
+	margin-top:10px;
 }

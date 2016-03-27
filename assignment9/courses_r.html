@@ -28,15 +28,15 @@
 	                        <a class="subgoto" href="enrollment_q.html">ENROLLMENT</a>
 			</div>
 
-                 	<form action="courses_r.html" method="post" class="entry">
+                 	<form action="courses_q.html" method="post" class="res">
 			<fieldset>
-			 	<input type="text" name="course" placeholder= "CS251" ><br>
-		 		<input type="text" name="course_name"  placeholder = "Course Name" ><br>
-			 	<input type="number" name="fac_id" placeholder= "Instructor ID"><br>
-			 	<input type="text" name="fac_name" placeholder="Instructor Full Name" ><br>
-		 		<input type="number" name="sem" placeholder="Semester: 1/2/3..."><br>
-			 	<input type="number" name="credits" placeholder="Credits" ><br>
-        	                <input type="submit" name="insert" class="btn" value="Search">
+			 	<label>COURSE ID<input type="text" name="course" value= "CS251"  disabled></label><br>
+		 		<label>COURSE NAME<input type="text" name="course_name"  value = "Course Name"  disabled></label><br>
+			 	<label>INSTRUCTOR ID<input type="number" name="fac_id" value= "1" disabled></label><br>
+			 	<label>INSTRUCTOR NAME<input type="text" name="fac_name" value="Instructor Full Name"  disabled></label><br>
+		 		<label>SEMESTER<input type="number" name="sem" value="1" disabled></label><br>
+			 	<label>CREDITS<input type="number" name="credits" value="12" disabled></label><br>
+        	                <input type="submit" name="insert" class="btn" id="new" value=" New Search">
 			 </fieldset>
                 	 </form>
 		 </section>          
