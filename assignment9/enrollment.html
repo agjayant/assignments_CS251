@@ -15,28 +15,34 @@
 		
 			 <div class="nav">
 	                        <a class="goto" href="home.html">Home</a>
-	                        <a class="goto" href="insert.html">insert</a>
-        	                <a class="goto" href="query.html">Query</a>
+	                        <a class="goto" href="students.html">insert</a>
+        	                <a class="goto" href="enrollment_q.html">Query</a>
                  	</div>
 		 </header>
 		 
 		 <section class="form2">		 
+		 	<div class="subnav">				
+	                        <a class="subgoto" href="students.html">STUDENTS</a>
+	                        <a class="subgoto" href="faculty.html">faculty</a>
+	                        <a class="subgoto" href="courses.html">courses</a>
+	                        <a class="subgoto" href="enrollment.html">ENROLLMENT</a>
+			</div>
+
                  	<form action="insert.php" method="post" class="entry">
 			<fieldset>
-			<legend> ENTRY </legend>
 			 	<input type="text" name="course" placeholder= "CS251" required><br>
 		 		<input type="number" name="roll"  placeholder = "14282" required><br>
 			 	<input type="number" name="assignments" placeholder= "Marks in Assignments"><br>
 			 	<input type="number" name="quiz" placeholder="Marks in Quizzes" ><br>
 		 		<input type="number" name="mid" placeholder="Marks in Mid-Sem"><br>
 			 	<input type="number" name="end" placeholder="Marks in End-Sem" ><br>
-        	                <input type="submit" name="insert" class="btn" value="Submit Entry">
+        	                <input type="submit" name="insert" class="btn" value="Submit">
 			 </fieldset>
                 	 </form>
 		 </section>          
 	
 		 <footer class="table">
-                         <a class="result" href="result.php">Enrollment Table</a>
+                         <a class="result" href="result.php">Database</a>
                  </footer>
         </body>
 </html>        
