@@ -6,36 +6,39 @@
         </head>
         <body>
 		<header class="head">
-			<img src="logo.jpg" class="logo">
+			<img src="logo1.png" class="logo">
         	        <div class="heading">
-                	        <h1 id="first">ENROLLMENT</h1>
+                	        <h1 id="first">DATABASE</h1>
                         	<h2 id="second">Department of Computer Science and Engineering</h2>
 	                        <h3 id="third">IIT Kanpur</h3>
         	         </div>
 		
 			 <div class="nav">
 	                        <a class="goto" href="home.html">Home</a>
-        	                <a class="goto" href="query.html">Query</a>
+	                        <a class="goto" href="enrollment.html">insert</a>
+        	                <a class="goto" id="ch" href="enrollment_q.html">Query</a>
                  	</div>
 		 </header>
 		 
 		 <section class="form2">		 
+		 	<div class="subnav">				
+	                        <a class="subgoto" href="students_q.html">STUDENTS</a>
+	                        <a class="subgoto" href="faculty_q.html">faculty</a>
+	                        <a class="subgoto" href="courses_q.html">courses</a>
+	                        <a class="subgoto" id="ch" href="enrollment_q.html">ENROLLMENT</a>
+			</div>
+
                  	<form action="insert.php" method="post" class="entry">
 			<fieldset>
-			<legend> ENTRY </legend>
-		 		<input type="number" name="roll"  placeholder = "14282" required><br>
 			 	<input type="text" name="course" placeholder= "CS251" required><br>
-			 	<input type="number" name="assignments" placeholder= "Marks in Assignments"><br>
-			 	<input type="number" name="quiz" placeholder="Marks in Quizzes" ><br>
-		 		<input type="number" name="mid" placeholder="Marks in Mid-Sem"><br>
-			 	<input type="number" name="end" placeholder="Marks in End-Sem" ><br>
-        	                <input type="submit" name="insert" class="btn" value="Submit Entry">
+		 		<input type="number" name="roll"  placeholder = "14282" required><br>
+        	                <input type="submit" name="insert" class="btn" value="Search">
 			 </fieldset>
                 	 </form>
 		 </section>          
 	
 		 <footer class="table">
-                         <a class="result" href="result.php">Enrollment Table</a>
+                         <a class="result" href="result.php">Database</a>
                  </footer>
         </body>
 </html>        
