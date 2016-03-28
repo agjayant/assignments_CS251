@@ -27,6 +27,7 @@
 	                        <a class="subgoto" id="ch" href="courses_q.html">courses</a>
 	                        <a class="subgoto" href="enrollment_q.html">ENROLLMENT</a>
 			</div>
+<p>Fields : ID, Name, Instructor_ID, Instructor, Sem, Credits</p>
 
                  	<form action="courses_r.php" method="post" class="entry">
 			<fieldset>
@@ -36,14 +37,14 @@
 			 	<input type="text" name="fac_name" placeholder="Instructor Full Name" ><br>
 		 		<input type="number" name="sem" placeholder="Semester: 1/2/3..."><br>			
 			 	<input type="number" name="credits" placeholder="Credits" ><br>-->
-				<input type="text" name="query" placeholder="Eg: Sem=4" ><br>
+				<input type="text" name="query" id="field" placeholder="Eg: Sem=4" ><br>
         	                <input type="submit" name="insert" class="btn" value="Search">
 			 </fieldset>
                 	 </form>
 		 </section>          
 	
-		 <footer class="table">
+		 <!--<footer class="table">
                          <a class="result" href="result.php">Database</a>
-                 </footer>
+                 </footer>-->
         </body>
 </html>        

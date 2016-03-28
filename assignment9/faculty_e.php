@@ -64,9 +64,9 @@ EOF;
                          </form>
                  </section>    
     
-                 <footer class=\"table\">
+                 <!--<footer class=\"table\">
                          <a class=\"result\" href=\"result.php\">Database</a>
-                 </footer>
+                 </footer>-->
 
 
 
