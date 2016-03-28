@@ -155,5 +155,24 @@ input{
 	margin-top:10px;
 }
 
+#field{
+	text-align:center;
 
+}
+
+.tabular{
+	margin-left:auto;
+	margin-right:auto;	
+
+}
+
+#frow{
+	color:black;
+}
+
+
+.even{
+	color:#505050;
+	
+}
 

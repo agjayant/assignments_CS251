@@ -55,16 +55,22 @@ EOF;
                         </div>
  ";?>
         <?php
-        echo "RollNo COURSE_ID assignments quiz midsem endsem aggregate grade <br>" ;
+$count=1;
+$col="odd";
+        echo "<table class=\"tabular\"><tr id=\"frow\"><td>RollNo</td><td>COURSE_ID</td><td>Assignments</td><td>Quiz</td><td>Midsem</td><td>Endsem</td><td>Aggregate</td><td>Grade</td></tr>" ;
 while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
-      echo $row['RollNo'] . "   ";
-      echo $row['COURSE_ID'] ."   ";
-      echo $row['assignments'] ."   ";
-      echo $row['quiz'] ."   ";
-      echo $row['midsem'] ."   ";
-      echo $row['endsem'] ."   ";
-      echo $row['aggregate'] ."   ";
-      echo $row['grade'] ."<br>";
+if($count%2==0) $col="even";
+else $col="odd";
+echo "<tr class=$col><td>";
+      echo $row['RollNo'] . "</td><td>";
+      echo $row['COURSE_ID'] ."</td><td>";
+      echo $row['assignments'] ."</td><td>";
+      echo $row['quiz'] ."</td><td>";
+      echo $row['midsem'] ."</td><td>";
+      echo $row['endsem'] ."</td><td>";
+      echo $row['aggregate'] ."</td><td>";
+      echo $row['grade'] ."</td></tr>";
+$count=$count+1;
 
    }
 
@@ -86,9 +92,9 @@ while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
                          </form>
                  </section>    
     
-                 <footer class=\"table\">
+                 <!--<footer class=\"table\">
                          <a class=\"result\" href=\"result.php\">Database</a>
-                 </footer>
+                 </footer>-->
 
 
 		";	

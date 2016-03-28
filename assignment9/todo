@@ -1,0 +1,8 @@
+1. Better Input to queries -- different fields for different topics
+2. Error handling : none found, Input Checking etc
+3. Add viewing database functionality (footer)
+4. Bug : No of rows exceeds the allocated space for <section>
+5. Field width in query pages
+6. Order of results in query answer pages( New search should b below thw results)
+7. Login
+

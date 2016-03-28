@@ -46,7 +46,7 @@ EOF;
                         </div>
                  </header>
     
-                 <section class=\"form2\" id=\"check\">    
+                 <section class=\"form2\">    
                         <div class=\"subnav\">    
                                 <a class=\"subgoto\" id=\"ch\" href=\"students_q.html\">STUDENTS</a>
                                 <a class=\"subgoto\" href=\"faculty_q.html\">faculty</a>
@@ -56,13 +56,19 @@ EOF;
 
                                                  ";?>
 	<?php
-	echo "RollNo Name Email <br>" ;
+	$count= 1;
+        $col = "odd" ;
+	echo "<table class=\"tabular\"><tr id=\"frow\"><td>RollNo</td><td>Name</td><td>Email</td></tr>" ;
 while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
-      echo $row['RollNo'] . "   ";
-      echo $row['Name'] ."   ";
-      echo $row['Email'] ."<br>";
-     
+      if($count%2==0) $col = "even";
+      else $col="odd";
+      echo "<tr class=$col><td>";
+      echo $row['RollNo'] . "</td><td>";
+      echo $row['Name'] ."</td><td>";
+      echo $row['Email'] ."</td></tr>";
+      $count=$count+1;     
    }
+	echo "</table>";
 
    $db->close();
         ?>
@@ -79,9 +85,9 @@ while($row = $ret->fetchArray(SQLITE3_ASSOC) ){
 
                  </section>    
     
-                 <footer class=\"table\">
+                 <!--<footer class=\"table\">
                          <a class=\"result\" href=\"result.php\">Database</a>
-                 </footer>
+                 </footer>-->
 
 
 
