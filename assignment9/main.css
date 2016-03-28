@@ -114,7 +114,7 @@ form{
 
 
 .form2{
-
+	line-height:20px;
 	padding-top:60px;
 	padding-bottom:240px;	
 }
@@ -154,3 +154,6 @@ input{
 #new{
 	margin-top:10px;
 }
+
+
+
