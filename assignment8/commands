@@ -1,0 +1,62 @@
+CREATING DATABASE :
+
+create table faculty(ID integer PRIMARY KEY, Name text, Email text, Dept text);
+
+create table students(RollNo integer PRIMARY KEY, Name text, Email text);
+
+create table courses(ID text PRIMARY KEY, Name text, Instructor_ID integer, Instructor text, Sem integer, Credits integer, FOREIGN KEY(Instructor_ID) references faculty(ID));
+
+create table Enrollment(RollNo integer, COURSE_ID text, assignments real,quiz real, midsem real, endsem real, aggregate real, grade text, PRIMARY KEY(RollNo,COURSE_ID),FOREIGN KEY(RollNo) references students(RollNo),FOREIGN KEY(COURSE_ID) references courses(ID));
+
+.mode csv
+.import faculty.csv faculty	
+.import students.csv students
+.import courses.csv courses
+.import enroll.csv Enrollment
+
+update Enrollment set aggregate=assignments+quiz+midsem+endsem;
+
+update Enrollment set grade="F";
+update Enrollment set grade="E" where aggregate>=25.0;
+update Enrollment set grade="D" where aggregate>=40.0;
+update Enrollment set grade="C" where aggregate>=50.0;
+update Enrollment set grade="B" where aggregate>=70.0;
+update Enrollment set grade="A" where aggregate>=80.0;
+update Enrollment set grade="A*" where aggregate>=95.0;
+
+Query Statements:
+
+.output query1.csv
+select email from students where RollNo>=14000;
+
+.output query2.csv
+select Name from faculty where Dept="cse";
+
+.output query3.csv
+select Name from courses where Instructor_ID=3;
+
+.output query4.csv
+select COURSE_ID,grade from Enrollment where RollNo=14998;
+
+.output query5.csv
+select RollNo from Enrollment where Course_ID="CS251" and grade="A*";
+
+.output query6.csv
+select RollNo,max(assignments) from Enrollment where COURSE_ID="CS251";
+
+.output query7.csv
+select * from Enrollment where COURSE_ID="CS251";
+
+.output query8.csv
+select avg(aggregate) from Enrollment where COURSE_ID="CS251";
+
+.output query9.csv
+select grade from Enrollment where COURSE_ID="CS220" and RollNo=14993;
+
+
+
+
+
+
+
+
